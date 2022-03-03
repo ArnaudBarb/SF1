@@ -1,0 +1,4 @@
+# le dièse en début de ligne est un commentaire
+# ~ valeurs nulles
+# - pour faire des listes
+# l'indentation est très importante dans les fichiers .yaml; ils ont une signification
