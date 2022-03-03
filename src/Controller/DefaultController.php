@@ -15,6 +15,8 @@ class DefaultController
     }
 
     #[Route('/chemin', name:'chemin')]
+// #[Route('/chemin', name:'chemin', methods: ['POST'])] limitera les accès en post=affichera seulement en get
+
     public function chemin(request $request)
     {
         // $request = request::createFromGlobals(); remplacé par l'injection de dépendance (request $request)
