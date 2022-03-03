@@ -5,3 +5,13 @@ controllers:
 kernel:
     resource: ../src/Kernel.php
     type: annotation
+
+# index:
+#     path: /
+#     controller: App\Controller\DefaultController::index
+
+# chemin:
+#     path: /chemin
+#     controller: App\Controller\DefaultController::chemin
+
+
