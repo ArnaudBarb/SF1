@@ -11,7 +11,25 @@ class PageController extends AbstractController
     #[Route('/page', name: 'app_page')]
     public function index(): Response
     {
-        return $this->render('base.html.twig');
+        $users = [
+            ['username' => 'Michel'],
+            ['username' => 'Francky'],
+            ['username' => 'Micheline'],
+            ['username' => 'Judith'],
+        ];
+
+        // return $this->render('base.html.twig', ['users' => $users]);
+
+        $continents = [
+
+            ['continentname' => 'Europe'],
+            ['continentname' => 'Asie'],
+            ['continentname' => 'Océanie'],
+            ['continentname' => 'Amérique du Nord'],
+            ['continentname' => 'Amérique du Sud'],
+        ];
+        return $this->render('base.html.twig', ['users' => $users, 'continents' => $continents]);
+
         // return $this->file('fichier.txt');va télécharger le fichier.txt dans le dossier téléchargement
         // return $this->json([
         //     'message' => 'Welcome to your new controller!',
