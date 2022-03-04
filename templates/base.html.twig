@@ -59,21 +59,21 @@
                     Ni l'un ni l'autre
             {% endif %} #}
 
-            {% if users %}
+            {# {% if husers %}
                 <ul>
-                    {% for user in users %}
-                        <li>{{user.username}}</li>
+                    {% for huser in husers %}
+                        <li>{{huser.husername}}</li>
                     {% endfor %}
                 </ul>
-            {% endif %}
+            {% endif %} #}
 
-            {% if continents %}
+            {# {% if continents %}
                 <select>
                     {% for continent in continents %}
                         <option value="">{{continent.continentname}}</option>
                     {% endfor %}
                 </select>
-            {% endif %}
+            {% endif %} #}
 
         {% block body %}{% endblock %}
     </body>

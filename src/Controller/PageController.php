@@ -8,34 +8,34 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class PageController extends AbstractController
 {
-    #[Route('/page', name: 'app_page')]
-    public function index(): Response
-    {
-        $users = [
-            ['username' => 'Michel'],
-            ['username' => 'Francky'],
-            ['username' => 'Micheline'],
-            ['username' => 'Judith'],
-        ];
+    // #[Route('/page', name: 'app_page')]
+    // public function index(): Response
+    // {
+    //     // $husers = [
+    //     //     ['husername' => 'Michel'],
+    //     //     ['husername' => 'Francky'],
+    //     //     ['husername' => 'Micheline'],
+    //     //     ['husername' => 'Judith'],
+    //     // ];
 
-        // return $this->render('base.html.twig', ['users' => $users]);
+    //     // return $this->render('base.html.twig', ['husers' => $husers]);
 
-        $continents = [
+    //     // $continents = [
 
-            ['continentname' => 'Europe'],
-            ['continentname' => 'Asie'],
-            ['continentname' => 'Océanie'],
-            ['continentname' => 'Amérique du Nord'],
-            ['continentname' => 'Amérique du Sud'],
-        ];
-        return $this->render('base.html.twig', ['users' => $users, 'continents' => $continents]);
+    //     //     ['continentname' => 'Europe'],
+    //     //     ['continentname' => 'Asie'],
+    //     //     ['continentname' => 'Océanie'],
+    //     //     ['continentname' => 'Amérique du Nord'],
+    //     //     ['continentname' => 'Amérique du Sud'],
+    //     // ];
+    //     // return $this->render('base.html.twig', ['continents' => $continents]);
 
-        // return $this->file('fichier.txt');va télécharger le fichier.txt dans le dossier téléchargement
-        // return $this->json([
-        //     'message' => 'Welcome to your new controller!',
-        //     'path' => 'src/Controller/PageController.php',
-        // ]);//retourne le contenu en format json
-    }
+    //     // return $this->file('fichier.txt');va télécharger le fichier.txt dans le dossier téléchargement
+    //     // return $this->json([
+    //     //     'message' => 'Welcome to your new controller!',
+    //     //     'path' => 'src/Controller/PageController.php',
+    //     // ]);//retourne le contenu en format json
+    // }
     #[Route('/machin', name:'app_machin')]
     public function machin(): Response
     {
