@@ -27,7 +27,7 @@ class DefaultController
         // dd($request);
         return new Response("<h1>La valeur est $id</h1>");
     }
-    #[Route('/{name}', name: 'testByName', methods: ['GET'], schemes:['https'])]
+    #[Route('/test/{name}', name: 'testByName', methods: ['GET'], schemes:['https'])]
     public function testByName(string $name ='defaut')
     {
         return new Response("<h1>Le mot est $name</h1>");
