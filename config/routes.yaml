@@ -6,12 +6,20 @@ kernel:
     resource: ../src/Kernel.php
     type: annotation
 
+index:
+    path: /
+    controller: Symfony\Bundle\FrameworkBundle\Controller\RedirectController
+    defaults:
+        route: 'testByName'
+        permanent: true
+        name: 'Michel' 
+
 # index:
 #     path: /
 #     controller: App\Controller\DefaultController::index
 
-# chemin:
-#     path: /chemin
+# toto:
+#     path: /toto
 #     controller: App\Controller\DefaultController::chemin
 
 
